@@ -3,7 +3,7 @@ import locale
 from bs4 import BeautifulSoup
 from fastapi import HTTPException
 
-# Configura para luego obtener el nombre del mes en español
+# Configure to then get the name of the month in Spanish
 locale.setlocale(locale.LC_TIME, 'es_ES.UTF-8')
 
 BASE_URL_UF = "https://www.sii.cl/valores_y_fechas/uf/uf"

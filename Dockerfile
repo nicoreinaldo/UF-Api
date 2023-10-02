@@ -1,4 +1,7 @@
 FROM python:3.11.5
+RUN apt-get update && apt-get install -y locales && \
+    echo "es_ES.UTF-8 UTF-8" >> /etc/locale.gen && \
+    locale-gen
 WORKDIR /app
 COPY ./app /app
 COPY ./requirements.txt /app/requirements.txt
